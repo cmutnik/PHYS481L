@@ -1,0 +1,19 @@
+# problem number 4.8a, 4.8b...counts are per 100 runs each
+#detector_sample_dist[cm]	gamma[counts]	gamma[counts]
+1000						93				94
+2000						78				77
+2500						66				68
+2300						76				80
+2200						82				82
+2100						78				80
+2600						66				71
+2600						68				73
+2700						70				67
+2800						65				59
+2900						69				59
+3000						48				69
+4000						52 				38
+
+
+#gnuplot> f(x)=0.5
+#gnuplot> plot 'ch4_simdata.txt' u 1:($2*$3)/(100*100), f(x)
